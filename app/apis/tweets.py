@@ -7,7 +7,7 @@ api = Namespace('tweets')
 model = api.model('Model', {
     'id': fields.Integer,
     'text': fields.String,
-    'created_at': fields.String,
+    'created_at': fields.DateTime,
 })
 
 @api.route('/<int:id>')
